@@ -1,0 +1,27 @@
+{
+  "name": "typeorm-typescript-express",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "SET PORT=4000&& SET DB_HOST=localhost&& SET DB_PORT=3306&& SET DB_NAME=test&& SET DB_USER=root&& SET DB_PASS=10pearls1+&& tsc && node src/index.js",
+    "db:create": "SET DB_HOST=localhost&& SET DB_PORT=3306&& SET DB_NAME=test&& SET DB_USER=root&& SET DB_PASS=10pearls1+&& ts-node ./node_modules/typeorm-extension/dist/cli/index.js db:create  --config src/config/ormConfig.ts",
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.3",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "ts-node": "^3.0.4",
+    "typeorm": "^0.2.0",
+    "typeorm-extension": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.8",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.11.1",
+    "@types/helmet": "4.0.0",
+    "@types/morgan": "^1.9.3",
+    "@types/node": "^9.6.5",
+    "typescript": "^3.3.3333"
+  }
+}
